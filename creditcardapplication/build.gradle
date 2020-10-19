@@ -51,8 +51,8 @@ compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-
 // https://mvnrepository.com/artifact/com.netflix.hystrix/hystrix-dashboard
 //compile group: 'com.netflix.hystrix', name: 'hystrix-dashboard', version: '1.4.7.RELEASE'
 
-// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
+testCompile("junit:junit:4.12")
+    testRuntime("org.junit.vintage:junit-vintage-engine:5.2.0")
 
 // https://mvnrepository.com/artifact/org.mockito/mockito-all
 testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
