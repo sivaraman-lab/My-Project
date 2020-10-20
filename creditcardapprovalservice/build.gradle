@@ -52,6 +52,9 @@ compile group: 'org.springframework.cloud', name: 'spring-cloud-netflix-eureka-s
 // https://mvnrepository.com/artifact/com.netflix.hystrix/hystrix-dashboard
 //compile group: 'com.netflix.hystrix', name: 'hystrix-dashboard', version: '1.5.18'
 
+testCompile("junit:junit:4.12")
+    testRuntime("org.junit.vintage:junit-vintage-engine:5.2.0")
+    
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
